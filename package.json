@@ -6,7 +6,11 @@
     "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:studio": "drizzle-kit studio --port 3333",
+    "db:push": "drizzle-kit push:sqlite",
+    "db:migrate": "drizzle-kit generate:sqlite --schema=./src/db/schemas/*"
   },
   "dependencies": {
     "@libsql/client": "0.4.0-pre.5",
@@ -20,7 +24,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "drizzle-kit": "^0.20.6",
+    "drizzle-kit": "^0.20.14",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
     "postcss": "^8",

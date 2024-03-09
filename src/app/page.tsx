@@ -9,7 +9,6 @@ export default async function Home() {
       <div>
         {data.map((user) => (
           <div key={user.id}>
-            let's see
             <p>{user.firstName + user.lastName}</p>
             <p>{user.email}</p>
             <p>{user.role}</p>
